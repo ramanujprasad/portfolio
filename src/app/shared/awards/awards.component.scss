@@ -1,13 +1,26 @@
 .awards-container {
-  h2 {
-    margin-bottom: -30px;
-  }
-}
-// Mobile view
-@media only screen and (max-width: 678px) {
-  .awards-container {
-    h2 {
-      margin-bottom: 0px;
+  &__row {
+    float: right;
+    cursor: pointer;
+
+    &__pic {
+      height: 70px;
+      width: 200px;
+      border: 2px solid #000;
     }
   }
+  &__icon {
+    font-size: 20px;
+    font-family: monospace;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+  &__details {
+    font-family: cursive;
+  }
+}
+
+.awards-notification {
+  float: right;
+  color: red;
 }

@@ -6,3 +6,27 @@ body {
   min-height: 100%;
   margin-top: 0;
 }
+
+.about-container,
+.skills-container,
+.not-container,
+.experience-container,
+.contact-container,
+.awards-container {
+  h2 {
+    margin-bottom: -30px;
+  }
+}
+// Mobile view
+@media only screen and (max-width: 678px) {
+  .about-container,
+  .skills-container,
+  .not-container,
+  .experience-container,
+  .contact-container,
+  .awards-container {
+    h2 {
+      margin-bottom: 0px;
+    }
+  }
+}
