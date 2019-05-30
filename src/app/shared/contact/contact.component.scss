@@ -1,0 +1,28 @@
+:host {
+  .mat-card {
+    background: none;
+    border: 2px solid #000;
+  }
+  .mat-raised-button {
+    background: #c8e4df;
+    color: rgba(191, 27, 27, 0.87);
+
+    &:hover {
+      background: #000;
+      opacity: 0.87;
+    }
+  }
+}
+.contact-container {
+  h2 {
+    margin-bottom: -30px;
+  }
+}
+// Mobile view
+@media only screen and (max-width: 678px) {
+  .contact-container {
+    h2 {
+      margin-bottom: 0px;
+    }
+  }
+}

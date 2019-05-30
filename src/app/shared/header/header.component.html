@@ -1,0 +1,27 @@
+<mat-toolbar color="primary" ngClass.lt-sm="small-device">
+  <mat-icon >dashboard</mat-icon>
+  <span class="title">{{'shared.title'| translate}}</span>
+
+  <!-- This fills the remaining space of the current row -->
+   <span class="fill-remaining-space"></span>
+
+  <!-- Download option -->
+  <button mat-button (click)="loadPage('download')">{{'shared.download'| translate}}</button>
+
+  <!-- Show more menu items -->
+  <button mat-button [matMenuTriggerFor]="moreMenu">{{'shared.more'| translate}}<mat-icon>more_vert</mat-icon></button>
+  <mat-menu #moreMenu="matMenu">
+    <button mat-menu-item (click)="loadPage('home')">{{'shared.home'| translate}}</button>
+    <button mat-menu-item (click)="loadPage('about')">{{'shared.about'| translate}}</button>
+    <button mat-menu-item (click)="loadPage('skills')">{{'shared.skills'| translate}}</button>
+    <button mat-menu-item (click)="loadPage('experience')">{{'shared.experience'| translate}}</button>
+    <button mat-menu-item (click)="loadPage('contact')">{{'shared.contact'| translate}}</button>
+  </mat-menu>
+
+  <!-- Used to show the language option -->
+  <button mat-button [matMenuTriggerFor]="langMenu">{{selectedLanguage}}<mat-icon >expand_more</mat-icon></button>
+  <mat-menu #langMenu="matMenu">
+    <button mat-menu-item *ngFor="let item of languages" (click)="changeLanguage(item)">{{item.name}}</button>
+  </mat-menu>
+
+</mat-toolbar>

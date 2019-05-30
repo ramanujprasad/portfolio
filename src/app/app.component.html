@@ -1,0 +1,16 @@
+<!-- Application header -->
+<app-header></app-header>
+
+<!-- Awards banner -->
+<div class="awards">
+  <a [routerLink]="['awards']">
+    <img class="awards__img" src="../../assets/images/awards.png" alt="awards">
+  </a>
+</div>
+<!-- Application container  -->
+<div class="container">
+    <router-outlet></router-outlet>
+
+    <!-- Particle background  -->
+    <app-particle></app-particle>
+</div>

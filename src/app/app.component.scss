@@ -1,0 +1,25 @@
+:host {
+  .container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+    padding-top: 100px;
+  }
+
+  @media only screen and (max-width: 678px) {
+    .container {
+      width: 85%;
+    }
+  }
+
+}
+.awards {
+  position: relative;
+
+  &__img {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    cursor: pointer;
+  }
+}

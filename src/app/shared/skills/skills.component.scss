@@ -1,0 +1,14 @@
+.skills-container {
+  h2 {
+    margin-bottom: -30px;
+  }
+}
+// Mobile view
+@media only screen and (max-width: 678px) {
+  .skills-container {
+    h2 {
+      margin-bottom: 0px;
+    }
+  }
+}
+

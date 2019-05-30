@@ -1,0 +1,39 @@
+:host {
+  .mat-card-content {
+    margin-top: 5px;
+  }
+}
+.experience-container {
+  h2 {
+    margin-bottom: -30px;
+  }
+}
+
+.movie-header-image {
+  background-image: url('../../../assets/images/experience/movie.jpg');
+  background-size: cover;
+}
+
+.profile-header-image {
+  background-image: url('../../../assets/images/experience/profile.jpg');
+  background-size: cover;
+}
+
+.login-header-image {
+  background-image: url('../../../assets/images/experience/login.jpg');
+  background-size: cover;
+}
+
+.cockroach-header-image {
+  background-image: url('../../../assets/images/experience/cockroach.jpg');
+  background-size: cover;
+}
+
+// Mobile view
+@media only screen and (max-width: 678px) {
+  .experience-container {
+    h2 {
+      margin-bottom: 0px;
+    }
+  }
+}
