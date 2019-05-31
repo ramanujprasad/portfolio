@@ -87,7 +87,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Application header -->\r\n<app-header></app-header>\r\n\r\n<!-- Awards banner -->\r\n<div class=\"awards\">\r\n  <a [routerLink]=\"['awards']\">\r\n    <img class=\"awards__img\" src=\"../../assets/images/awards.png\" alt=\"awards\">\r\n  </a>\r\n</div>\r\n<!-- Application container  -->\r\n<div class=\"container\">\r\n    <router-outlet></router-outlet>\r\n\r\n    <!-- Particle background  -->\r\n    <app-particle></app-particle>\r\n</div>\r\n"
+module.exports = "<!-- Application header -->\r\n<app-header></app-header>\r\n\r\n<!-- Awards banner -->\r\n<div class=\"awards\">\r\n  <a [routerLink]=\"['awards']\">\r\n    <img class=\"awards__img\" src=\"assets/images/awards.png\" alt=\"awards\">\r\n  </a>\r\n</div>\r\n<!-- Application container  -->\r\n<div class=\"container\">\r\n    <router-outlet></router-outlet>\r\n\r\n    <!-- Particle background  -->\r\n    <app-particle></app-particle>\r\n</div>\r\n"
 
 /***/ }),
 
