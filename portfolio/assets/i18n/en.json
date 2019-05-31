@@ -1,0 +1,91 @@
+{
+  "header": {
+    "title": "R.P.",
+    "home": "Home",
+    "download": "Download",
+    "more": "More",
+    "about": "About",
+    "skills": "Skills",
+    "works": "Work",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "I'm Ramanuj",
+    "description": "FRONT-END DEVELOPER"
+  },
+  "about": {
+    "title": "About me",
+    "description": "Everything started with a passion for web technology. A well driven, result oriented and self motivated individual who believes in aspiring high and then complementing it with hard work.I’ve extensive experience in front-end technologies like HTML5, CSS3, JavaScript, Angular etc. Combining those with my knowledge of the current web standards, I have successfully executed many front-end projects.",
+    "timeline": {
+      "header": "Timeline:",
+      "one": "1989- Born and raised in Buchilami a small village in Jharkhand, India.",
+      "two": "2008- Moved to Tamil Nadu, India to complete my B.Tech (CHE Engineering) from SASTRA University.",
+      "three": "2012- Started my professional career as a web developer with Tata Consultancy Services LTD in Chennai, India. I worked for client State Farm, Insurance (USA) as a web developer for 2+ years.",
+      "four": "2015- Worked for another project as senior front end developer for CNA Insurance (USA).",
+      "five": "2016- Moved to Amsterdam, Netherlands and started working for KLM Royal Dutch Airlines as a Senior front end developer (Angular 2+)."
+    },
+    "passion": {
+      "header": "Passion:",
+      "description": "During the free time, I like travelling and exploring the new places as well as making new friends."
+    }
+  },
+  "awards": {
+    "title": "My awards",
+    "one": {
+      "name": "Star of the month award:",
+      "description": "Had received multiple client appreciations for continuously performing best among the team in the 'Agent Microsite' team for State Farm Insurance project."
+    },
+    "two": {
+      "name": "Best team award:",
+      "description": "Awarded with the ‘Best team’ award in 2018 among e-commerce modules for outstanding delivery of project and enhancing the company business for KLM Royal Dutch Airlines."
+    },
+    "three": {
+      "name": "Special initiative award:",
+      "description": "Awarded with ‘Special initiative’ award for the ideas and out of box thinking and creating prototype on ‘Social media data driven interactive Microsite Customization Tool’. The prototype were also presented to the client."
+    },
+    "four": {
+      "name": "Certificate of appreciation:",
+      "description": "For volunteering in Team Everest - Digital Literacy Program which was organized by TCS Chennai Maitree team for rural people."
+    },
+    "five": {
+      "name": "On the spot award:",
+      "description": " Awarded with ‘Best conceptualization’ award for presenting the gamification concept in insurance industry for enhancing the company business."
+    },
+    "nitification": "*click the image above to view the awards..."
+  },
+  "contact": {
+    "title": "Contact me",
+    "description": "If you are interested in working with me, want to grab a coffee, or just have a chat,",
+    "link": "send me an email"
+  },
+  "experience": {
+    "title": "Free Time Experience",
+    "btn": {
+      "website": "WEBSITE",
+      "code": "CODE"
+    },
+    "one": {
+      "title": "Movie app",
+      "subtitle": "Search movie by title"
+    },
+    "two": {
+      "title": "My Portfolio",
+      "subtitle": "My experience portfolio app"
+    },
+    "three": {
+      "title": "Login app",
+      "subtitle": "Simple login page for an admin"
+    },
+    "four": {
+      "title": "Cockroach game",
+      "subtitle": "Simple game to play"
+    }
+  },
+  "notfound": {
+    "title": "Page Not Found"
+  },
+  "skills": {
+    "title": "My Skills"
+  }
+}
