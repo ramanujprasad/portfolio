@@ -56,8 +56,8 @@ export class SkillsComponent implements OnInit {
 
   ngOnInit() {
     const canvas = document.getElementsByTagName('canvas')[0];
-    canvas.width  = 700;
-    canvas.height = 700;
+    canvas.width  = 500;
+    canvas.height = 500;
   }
 
   tagClicked(tag) {

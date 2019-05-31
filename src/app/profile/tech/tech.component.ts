@@ -52,8 +52,8 @@ export class TechComponent implements OnInit {
 
   ngOnInit() {
     const canvas = document.getElementsByTagName('canvas')[0];
-    canvas.width  = 500;
-    canvas.height = 500;
+    canvas.width  = 400;
+    canvas.height = 400;
   }
 
   tagClicked(tag) {
