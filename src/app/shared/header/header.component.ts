@@ -46,7 +46,7 @@ export class HeaderComponent implements OnInit {
   }
 
   goToDownload(): void {
-    window.open('../../assets/images/resume.pdf', '_blank');
+    window.open('assets/images/resume.pdf', '_blank');
   }
 
 }
