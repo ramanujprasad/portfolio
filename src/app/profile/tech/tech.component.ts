@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Tag } from 'ng-tagcanvas';
+import { Tag } from 'cloudee';
 
 @Component({
   selector: 'app-tech',
@@ -8,30 +8,30 @@ import { Tag } from 'ng-tagcanvas';
 })
 export class TechComponent implements OnInit {
   tags: Tag[] = [
-    { weight: 24, text: 'SCSS' },
-    { weight: 18, text: 'AngularJS' },
-    { weight: 20, text: 'JavaScript' },
-    { weight: 20, text: 'TypeScript' },
-    { weight: 18, text: 'Node' },
-    { weight: 24, text: 'Angular 2x' },
-    { weight: 24, text: 'HTML5' },
-    { weight: 24, text: 'CSS3' },
-    { weight: 24, text: 'Bootstrap' },
-    { weight: 16, text: 'GraphQL' },
-    { weight: 18, text: 'Express' },
-    { weight: 24, text: 'Git' },
-    { weight: 18, text: 'Protractor' },
-    { weight: 16, text: 'Jasmine' },
-    { weight: 20, text: 'REST' },
-    { weight: 22, text: 'Bitbucket' },
-    { weight: 18, text: 'Karma' },
-    { weight: 24, text: 'Jira' },
-    { weight: 20, text: 'Confluence' },
-    { weight: 18, text: 'JSP' },
-    { weight: 22, text: 'SVN' },
-    { weight: 20, text: 'jQuery' },
-    { weight: 18, text: 'Jenkins' },
-    { weight: 20, text: 'oAuth 2.0' }
+    { weight: 24, text: 'SCSS', image: '../favicon.ico' },
+    { weight: 18, text: 'AngularJS', image: '../favicon.ico' },
+    { weight: 20, text: 'JavaScript', image: '../favicon.ico' },
+    { weight: 20, text: 'TypeScript', image: '../favicon.ico' },
+    { weight: 18, text: 'Node', image: '../favicon.ico' },
+    { weight: 24, text: 'Angular', image: '../favicon.ico' },
+    { weight: 24, text: 'HTML5', image: '../favicon.ico' },
+    { weight: 24, text: 'CSS3', image: '../favicon.ico' },
+    { weight: 24, text: 'Bootstrap', image: '../favicon.ico' },
+    { weight: 16, text: 'GraphQL', image: '../favicon.ico' },
+    { weight: 18, text: 'Express', image: '../favicon.ico' },
+    { weight: 24, text: 'Git', image: '../favicon.ico' },
+    { weight: 18, text: 'Protractor', image: '../favicon.ico' },
+    { weight: 16, text: 'Jasmine', image: '../favicon.ico' },
+    { weight: 20, text: 'REST', image: '../favicon.ico' },
+    { weight: 22, text: 'Bitbucket', image: '../favicon.ico' },
+    { weight: 18, text: 'Karma', image: '../favicon.ico' },
+    { weight: 24, text: 'Jira', image: '../favicon.ico' },
+    { weight: 20, text: 'Confluence', image: '../favicon.ico' },
+    { weight: 18, text: 'JSP', image: '../favicon.ico' },
+    { weight: 22, text: 'SVN', image: '../favicon.ico' },
+    { weight: 20, text: 'jQuery', image: '../favicon.ico' },
+    { weight: 18, text: 'Jenkins', image: '../favicon.ico' },
+    { weight: 20, text: 'oAuth 2.0', image: '../favicon.ico' }
   ];
 
   options: TagCanvasOptions = {
@@ -45,7 +45,8 @@ export class TechComponent implements OnInit {
     textColour: '#900',
     textHeight: 25,
     outlineMethod: 'colour',
-    outlineColour: '#039'
+    outlineColour: '#039',
+    imageMode: 'text'
   };
 
   constructor() { }
@@ -56,7 +57,7 @@ export class TechComponent implements OnInit {
     canvas.height = 400;
   }
 
-  tagClicked(tag) {
+  tagClicked(tag: any) {
     console.log(tag);
   }
 

@@ -29,4 +29,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Deployment
 
 This project is deployed in below link,
-https://ramanujprasad.github.io/Portfolio/
+https://ramanujprasad.github.io/portfolio/

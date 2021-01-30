@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Tag } from 'ng-tagcanvas';
+import { Tag } from 'cloudee';
 
 @Component({
   selector: 'app-skills',
@@ -9,35 +9,35 @@ import { Tag } from 'ng-tagcanvas';
 export class SkillsComponent implements OnInit {
 
   tags: Tag[] = [
-    { weight: 35, text: 'SCSS' },
-    { weight: 35, text: 'AngularJS' },
-    { weight: 35, text: 'JavaScript' },
-    { weight: 35, text: 'TypeScript' },
-    { weight: 35, text: 'Node' },
-    { weight: 35, text: 'Karma' },
-    { weight: 35, text: 'jQuery' },
-    { weight: 35, text: 'CSS3' },
-    { weight: 35, text: 'GraphQL' },
-    { weight: 35, text: 'Express' },
-    { weight: 35, text: 'Git' },
-    { weight: 35, text: 'Protractor' },
-    { weight: 35, text: 'Jasmine' },
-    { weight: 35, text: 'REST' },
-    { weight: 35, text: 'Bitbucket' },
-    { weight: 35, text: 'Angular 2x' },
-    { weight: 35, text: 'Jira' },
-    { weight: 35, text: 'Confluence' },
-    { weight: 35, text: 'JSP' },
-    { weight: 35, text: 'SVN' },
-    { weight: 35, text: 'jQuery' },
-    { weight: 35, text: 'Jenkins' },
-    { weight: 35, text: 'oAuth 2.0' },
-    { weight: 35, text: 'HTML5' },
-    { weight: 35, text: 'Optimizely' },
-    { weight: 35, text: 'NgRX' },
-    { weight: 35, text: 'Bootstrap' },
-    { weight: 35, text: 'Angular Material' },
-    { weight: 35, text: 'Flex' }
+    { weight: 35, text: 'SCSS', image: '../favicon.ico'},
+    { weight: 35, text: 'AngularJS', image: '../favicon.ico' },
+    { weight: 35, text: 'JavaScript', image: '../favicon.ico' },
+    { weight: 35, text: 'TypeScript', image: '../favicon.ico' },
+    { weight: 35, text: 'Node', image: '../favicon.ico' },
+    { weight: 35, text: 'Karma', image: '../favicon.ico' },
+    { weight: 35, text: 'jQuery', image: '../favicon.ico' },
+    { weight: 35, text: 'CSS3', image: '../favicon.ico' },
+    { weight: 35, text: 'GraphQL', image: '../favicon.ico' },
+    { weight: 35, text: 'Express', image: '../favicon.ico' },
+    { weight: 35, text: 'Git', image: '../favicon.ico' },
+    { weight: 35, text: 'Protractor', image: '../favicon.ico' },
+    { weight: 35, text: 'Jasmine', image: '../favicon.ico' },
+    { weight: 35, text: 'REST', image: '../favicon.ico' },
+    { weight: 35, text: 'Bitbucket', image: '../favicon.ico' },
+    { weight: 35, text: 'Angular', image: '../favicon.ico' },
+    { weight: 35, text: 'Jira', image: '../favicon.ico' },
+    { weight: 35, text: 'Confluence', image: '../favicon.ico' },
+    { weight: 35, text: 'JSP', image: '../favicon.ico' },
+    { weight: 35, text: 'SVN', image: '../favicon.ico' },
+    { weight: 35, text: 'jQuery', image: '../favicon.ico' },
+    { weight: 35, text: 'Jenkins', image: '../favicon.ico' },
+    { weight: 35, text: 'oAuth 2.0', image: '../favicon.ico' },
+    { weight: 35, text: 'HTML5', image: '../favicon.ico' },
+    { weight: 35, text: 'Optimizely', image: '../favicon.ico' },
+    { weight: 35, text: 'NgRX', image: '../favicon.ico' },
+    { weight: 35, text: 'Bootstrap', image: '../favicon.ico' },
+    { weight: 35, text: 'Angular Material', image: '../favicon.ico' },
+    { weight: 35, text: 'Flex', image: '../favicon.ico' }
   ];
 
   options: TagCanvasOptions = {
@@ -48,8 +48,8 @@ export class SkillsComponent implements OnInit {
     textFont: 'Impact,"Arial Black",sans-serif',
     maxSpeed: 0.02,
     fadeIn: 800,
-    textColour: null,
-    textHeight: 25
+    textHeight: 25,
+    imageMode: 'text'
   };
 
   constructor() { }
@@ -60,7 +60,7 @@ export class SkillsComponent implements OnInit {
     canvas.height = 500;
   }
 
-  tagClicked(tag) {
+  tagClicked(tag: any) {
     console.log(tag);
   }
 }

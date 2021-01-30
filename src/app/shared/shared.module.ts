@@ -1,19 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
-import {
-  MatToolbarModule,
-  MatIconModule,
-  MatButtonModule,
-  MatMenuModule,
-  MatSidenavModule,
-  MatTooltipModule,
-  MatListModule } from '@angular/material';
-import {MatCardModule} from '@angular/material/card';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatCardModule } from '@angular/material/card';
+import { MatListModule } from '@angular/material/list';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { TranslateModule } from '@ngx-translate/core';
 import { ParticlesModule } from 'angular-particle';
-import { TagCanvasModule } from 'ng-tagcanvas';
+import { CloudyModule } from 'cloudee';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ParticleComponent } from './particle/particle.component';
 import { ContactComponent } from './contact/contact.component';
@@ -23,14 +22,14 @@ import { ExperienceComponent } from './experience/experience.component';
 
 @NgModule({
   declarations: [
-     HeaderComponent,
-     PageNotFoundComponent,
-     ParticleComponent,
-     ContactComponent,
-     SkillsComponent,
-     AwardsComponent,
-     ExperienceComponent
-    ],
+    HeaderComponent,
+    PageNotFoundComponent,
+    ParticleComponent,
+    ContactComponent,
+    SkillsComponent,
+    AwardsComponent,
+    ExperienceComponent
+  ],
   imports: [
     CommonModule,
     MatToolbarModule,
@@ -43,13 +42,9 @@ import { ExperienceComponent } from './experience/experience.component';
     MatTooltipModule,
     MatListModule,
     ParticlesModule,
-    TagCanvasModule,
+    CloudyModule,
     MatCardModule
   ],
-  exports: [
-    HeaderComponent,
-    ParticleComponent,
-    SkillsComponent
-  ]
+  exports: [HeaderComponent, ParticleComponent, SkillsComponent]
 })
-export class SharedModule { }
+export class SharedModule {}

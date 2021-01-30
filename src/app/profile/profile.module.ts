@@ -1,27 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {
-  MatToolbarModule,
-  MatIconModule,
-  MatButtonModule,
-  MatMenuModule,
-  MatSidenavModule,
-  MatCardModule,
-  MatListModule } from '@angular/material';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatCardModule } from '@angular/material/card';
+import { MatListModule } from '@angular/material/list';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { TranslateModule } from '@ngx-translate/core';
-import { TagCanvasModule } from 'ng-tagcanvas';
+import { CloudyModule } from 'cloudee';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { SharedModule } from './../shared/shared.module';
 import { TechComponent } from './tech/tech.component';
 
 @NgModule({
-  declarations: [
-    HomeComponent,
-    AboutComponent,
-    TechComponent
-    ],
+  declarations: [HomeComponent, AboutComponent, TechComponent],
   imports: [
     CommonModule,
     MatToolbarModule,
@@ -34,11 +29,8 @@ import { TechComponent } from './tech/tech.component';
     MatListModule,
     MatCardModule,
     SharedModule,
-    TagCanvasModule
+    CloudyModule
   ],
-  exports: [
-    HomeComponent,
-    AboutComponent
-  ]
+  exports: [HomeComponent, AboutComponent]
 })
-export class ProfileModule { }
+export class ProfileModule {}
