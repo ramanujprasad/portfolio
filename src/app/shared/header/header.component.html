@@ -1,6 +1,6 @@
 <mat-toolbar color="primary" ngClass.lt-sm="small-device">
-  <mat-icon >dashboard</mat-icon>
-  <span class="title">{{'header.title'| translate}}</span>
+  <mat-icon (click)="loadPage('home')">dashboard</mat-icon>
+  <span class="title" (click)="loadPage('home')">{{'header.title'| translate}}</span>
 
   <!-- This fills the remaining space of the current row -->
    <span class="fill-remaining-space"></span>

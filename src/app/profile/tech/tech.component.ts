@@ -31,7 +31,7 @@ export class TechComponent implements OnInit {
     { weight: 22, text: 'SVN', image: '../favicon.ico' },
     { weight: 20, text: 'jQuery', image: '../favicon.ico' },
     { weight: 18, text: 'Jenkins', image: '../favicon.ico' },
-    { weight: 20, text: 'oAuth 2.0', image: '../favicon.ico' }
+    { weight: 20, text: 'Apollo', image: '../favicon.ico' }
   ];
 
   options: TagCanvasOptions = {
